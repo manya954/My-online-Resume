@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>contact form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Georama:wght@300&family=Open+Sans+Condensed:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        text-transform: capitalize;
+      }
+      div.container {
+        width: 25%;
+        height: 500px;
+        margin: 10px auto;
+        border: 2px solid rgb(196, 190, 190);
+        border-radius: 4px;
+        
+      }
+      div.container::after{
+          content: " ";
+          clear:both;
+          display: block;
+      }
+      h1 {
+        font-family: georama;
+        padding: 7px 0px;
+        margin-top: 0px;
+        margin-bottom: 35px;
+        text-align: center;
+        background-color: rgba(47, 179, 255, 0.281);
+        width: 100%;
+      }
+      div{background-color: rgba(128, 128, 128, 0.144);}
+      p {
+        font-family: "open sans condensed";
+        margin-left: 5px;
+        line-height: 30px;
+      }
+      input {
+        float: right;
+        margin: 4px;
+        padding: 3px;
+      }
+      textarea {
+        width: 98.4%; box-sizing: border-box; height: 200px; float: right; margin-right: 5px;
+      }
+      input[type="button"]{background-color: rgba(47, 179, 255, 0.281);
+    padding: 4px 9px;
+border: 1px ;
+border-radius: 4px;}
+input[type="text"]:hover,input[type="number"]:hover,input[type="email"]:hover,textarea:hover{border: 2px solid rgb(136, 130, 130) ;}
+input[type="button"]:hover{background-color: rgba(47, 179, 255, 0.685);}
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>contact form</h1>
+      <form action="mailto:manyasinha50@gmail.com" method="post" enctype="text/plain">
+        <p>name : <input type="text" name="Name" /></p>
+        <p>phone number : <input type="number" name="phone no."/></p>
+        <p>e-mail : <input type="email" name="e-mail id" id="" /></p>
+    </p>
+    <p>
+        message : <br />
+        <textarea name="message" id="" cols="28" rows="10" ></textarea>
+        <input type="submit" value="submit"/>
+      </form>
+    </div>
+  </body>
+</html>
